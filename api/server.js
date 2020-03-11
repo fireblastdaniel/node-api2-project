@@ -14,7 +14,7 @@ server.get('/', (req, res) => {
   res.status(json.query);
 });
 
-server.use('api/posts', blogPostRouter);
+server.use('/api/posts', blogPostRouter);
 //server.use('api/comments', commentRouter);
 
 module.exports = server;
